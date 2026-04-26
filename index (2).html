@@ -1,0 +1,1726 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Rog Balai | Premium YouTube Channel Website Template</title>
+  <meta name="description" content="Official-style single-page website template for Rog Balai. Showcase videos, shorts, creator highlights, FAQs, and subscribe calls-to-action with a premium dark aesthetic and SEO-ready structure." />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="Rog Balai, Rog Balai YouTube channel, gaming and creator entertainment, Bangladesh creator, YouTube creator website, premium creator landing page" />
+  <link rel="canonical" href="https://www.example.com/rog-balai" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Rog Balai | Premium YouTube Channel Website Template" />
+  <meta property="og:description" content="Explore latest videos, shorts, community highlights, FAQs, and subscribe to Rog Balai through this premium creator-first website template." />
+  <meta property="og:url" content="https://www.example.com/rog-balai" />
+  <meta property="og:image" content="https://placehold.co/1200x630/121212/8A2BE2?text=Rog+Balai" />
+  <meta property="og:site_name" content="Rog Balai" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Rog Balai | Premium YouTube Channel Website Template" />
+  <meta name="twitter:description" content="Modern, mobile-first landing page for Rog Balai with video showcases, social links, FAQs, and a strong subscribe CTA." />
+  <meta name="twitter:image" content="https://placehold.co/1200x630/121212/8A2BE2?text=Rog+Balai" />
+
+  <meta name="theme-color" content="#121212" />
+
+  <script type="application/ld+json" id="faq-schema">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What kind of content does Rog Balai create?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Rog Balai creates gaming and creator entertainment content with a high-energy, community-driven style. Replace this answer with your channel's exact niche."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where can I watch the latest Rog Balai videos?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can watch the newest uploads in the Latest Videos section below or by visiting the official YouTube channel linked throughout the page."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I subscribe and follow Rog Balai?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use any Subscribe button on this page to visit the YouTube channel, then click Subscribe and enable notifications for new uploads."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --color-primary: #8A2BE2;
+      --color-secondary: #B19CD9;
+      --color-accent: #6A0DAD;
+      --color-background: #121212;
+      --color-surface: #181818;
+      --color-surface-alt: #1f1f1f;
+      --color-border: rgba(255, 255, 255, 0.08);
+      --color-text: #f5f5f5;
+      --color-text-soft: #E0E0E0;
+      --color-muted: #b6b6b6;
+      --color-success: #7CFFB2;
+      --gradient-primary: linear-gradient(135deg, #8A2BE2 0%, #6A0DAD 55%, #4f0b80 100%);
+      --gradient-soft: radial-gradient(circle at top right, rgba(138, 43, 226, 0.28), transparent 35%), radial-gradient(circle at left center, rgba(106, 13, 173, 0.18), transparent 30%);
+      --shadow-glow: 0 12px 40px rgba(138, 43, 226, 0.18);
+      --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.25);
+      --radius-sm: 12px;
+      --radius-md: 18px;
+      --radius-lg: 26px;
+      --radius-pill: 999px;
+      --container: 1160px;
+      --transition: 220ms ease;
+      --header-height: 72px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", Arial, Helvetica, sans-serif;
+      background:
+        var(--gradient-soft),
+        var(--color-background);
+      color: var(--color-text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    img,
+    iframe {
+      max-width: 100%;
+      display: block;
+      border: 0;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input,
+    textarea {
+      font: inherit;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: 12px;
+      top: -50px;
+      background: #ffffff;
+      color: #111111;
+      padding: 10px 14px;
+      border-radius: 10px;
+      z-index: 1000;
+      transition: top var(--transition);
+    }
+
+    .skip-link:focus {
+      top: 12px;
+    }
+
+    .container {
+      width: min(var(--container), calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 72px 0;
+      position: relative;
+    }
+
+    .section-header {
+      margin-bottom: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      width: fit-content;
+      padding: 8px 14px;
+      border-radius: var(--radius-pill);
+      color: var(--color-secondary);
+      background: rgba(177, 156, 217, 0.08);
+      border: 1px solid rgba(177, 156, 217, 0.18);
+      font-size: 0.82rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .section h2 {
+      margin: 0;
+      font-size: clamp(1.8rem, 4.6vw, 2.7rem);
+      line-height: 1.12;
+      letter-spacing: 0.01em;
+    }
+
+    .section p.section-lead {
+      margin: 0;
+      color: var(--color-muted);
+      max-width: 720px;
+      font-size: 1rem;
+    }
+
+    .accent-text {
+      color: var(--color-secondary);
+    }
+
+    .highlight {
+      color: var(--color-success);
+    }
+
+    .keyword {
+      color: #ffffff;
+      background: linear-gradient(90deg, rgba(138, 43, 226, 0.25), rgba(177, 156, 217, 0.12));
+      padding: 2px 8px;
+      border-radius: 999px;
+      border: 1px solid rgba(177, 156, 217, 0.18);
+      white-space: nowrap;
+    }
+
+    .button-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 48px;
+      padding: 12px 18px;
+      border-radius: var(--radius-pill);
+      border: 1px solid transparent;
+      font-weight: 600;
+      transition: transform var(--transition), box-shadow var(--transition), background var(--transition), border-color var(--transition), color var(--transition);
+      cursor: pointer;
+    }
+
+    .button:focus-visible,
+    .nav-link:focus-visible,
+    .social-link:focus-visible,
+    .mobile-toggle:focus-visible,
+    .faq-question:focus-visible {
+      outline: 3px solid rgba(177, 156, 217, 0.45);
+      outline-offset: 3px;
+    }
+
+    .button-primary {
+      background: var(--gradient-primary);
+      color: #ffffff;
+      box-shadow: var(--shadow-glow);
+    }
+
+    .button-secondary {
+      background: rgba(255, 255, 255, 0.02);
+      color: var(--color-text);
+      border-color: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .button-primary:hover {
+      box-shadow: 0 18px 44px rgba(138, 43, 226, 0.28);
+    }
+
+    .button-secondary:hover {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: rgba(177, 156, 217, 0.35);
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(18, 18, 18, 0.82);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .nav-wrap {
+      min-height: var(--header-height);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: 0.02em;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: var(--gradient-primary);
+      box-shadow: var(--shadow-glow);
+      font-weight: 800;
+      color: #ffffff;
+      flex: 0 0 auto;
+    }
+
+    .brand-name {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+
+    .brand-name small {
+      color: var(--color-secondary);
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .navigation {
+      display: none;
+    }
+
+    .navigation-list {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav-link {
+      display: inline-flex;
+      align-items: center;
+      min-height: 40px;
+      padding: 8px 12px;
+      color: var(--color-text-soft);
+      border-radius: 999px;
+      font-size: 0.95rem;
+      transition: background var(--transition), color var(--transition);
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      background: rgba(138, 43, 226, 0.14);
+      color: #ffffff;
+    }
+
+    .mobile-toggle {
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.03);
+      color: #ffffff;
+      width: 46px;
+      height: 46px;
+      border-radius: 14px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .mobile-panel {
+      display: none;
+      padding-bottom: 16px;
+    }
+
+    .mobile-panel.open {
+      display: block;
+    }
+
+    .mobile-links {
+      list-style: none;
+      margin: 0;
+      padding: 10px 0 0;
+      display: grid;
+      gap: 8px;
+    }
+
+    .mobile-links a {
+      display: block;
+      padding: 12px 14px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      color: var(--color-text-soft);
+    }
+
+    .hero {
+      padding-top: 54px;
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      gap: 26px;
+      align-items: center;
+    }
+
+    .hero-copy {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-card {
+      position: relative;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03));
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 22px;
+      box-shadow: var(--shadow-card);
+      overflow: hidden;
+    }
+
+    .hero-card::before {
+      content: "";
+      position: absolute;
+      inset: -30% -20% auto auto;
+      width: 220px;
+      height: 220px;
+      background: radial-gradient(circle, rgba(138, 43, 226, 0.45), transparent 60%);
+      pointer-events: none;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: var(--radius-pill);
+      background: rgba(138, 43, 226, 0.12);
+      border: 1px solid rgba(138, 43, 226, 0.22);
+      color: #f3eaff;
+      font-size: 0.84rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      margin: 0 0 16px;
+      font-size: clamp(2.2rem, 8vw, 4.5rem);
+      line-height: 0.98;
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+    }
+
+    .hero h1 span {
+      display: block;
+      color: var(--color-secondary);
+    }
+
+    .hero-subtitle {
+      margin: 0 0 22px;
+      font-size: clamp(1rem, 2vw, 1.08rem);
+      color: var(--color-text-soft);
+      max-width: 680px;
+    }
+
+    .hero-meta {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .meta-item {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--color-border);
+      padding: 14px;
+      border-radius: var(--radius-md);
+    }
+
+    .meta-item strong {
+      display: block;
+      font-size: 1.1rem;
+      margin-bottom: 4px;
+    }
+
+    .meta-item span {
+      color: var(--color-muted);
+      font-size: 0.9rem;
+    }
+
+    .hero-visual {
+      position: relative;
+      display: grid;
+      gap: 16px;
+    }
+
+    .creator-panel {
+      background: linear-gradient(160deg, rgba(138, 43, 226, 0.18), rgba(255, 255, 255, 0.03));
+      border: 1px solid rgba(177, 156, 217, 0.18);
+      border-radius: 28px;
+      padding: 18px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .creator-panel-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .live-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.05);
+      font-size: 0.84rem;
+      color: var(--color-text-soft);
+    }
+
+    .dot-live {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #ff4d8d;
+      box-shadow: 0 0 0 0 rgba(255, 77, 141, 0.65);
+      animation: pulse 1.8s infinite;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(255, 77, 141, 0.65); }
+      70% { box-shadow: 0 0 0 10px rgba(255, 77, 141, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(255, 77, 141, 0); }
+    }
+
+    .creator-screen {
+      border-radius: 22px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: #0e0e0e;
+      position: relative;
+      aspect-ratio: 16 / 10;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.02);
+    }
+
+    .creator-screen::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, rgba(18,18,18,0.1), rgba(18,18,18,0.5)),
+        url("https://placehold.co/1200x800/151515/8A2BE2?text=Rog+Balai+Hero+Visual") center/cover no-repeat;
+    }
+
+    .screen-overlay {
+      position: absolute;
+      inset: auto 0 0 0;
+      padding: 18px;
+      background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.82));
+    }
+
+    .screen-overlay h2 {
+      margin: 0 0 8px;
+      font-size: 1.2rem;
+    }
+
+    .screen-overlay p {
+      margin: 0;
+      color: var(--color-text-soft);
+      font-size: 0.95rem;
+    }
+
+    .floating-panel {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .floating-stat,
+    .floating-note {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--color-border);
+      padding: 14px;
+      border-radius: 18px;
+    }
+
+    .floating-stat strong,
+    .floating-note strong {
+      display: block;
+      font-size: 1rem;
+      margin-bottom: 4px;
+    }
+
+    .floating-stat span,
+    .floating-note span {
+      color: var(--color-muted);
+      font-size: 0.9rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .video-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .video-card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+      border: 1px solid var(--color-border);
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+      transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+    }
+
+    .video-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(177, 156, 217, 0.26);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.32);
+    }
+
+    .video-frame {
+      position: relative;
+      aspect-ratio: 16 / 9;
+      background: #0b0b0b;
+    }
+
+    .video-frame iframe,
+    .video-frame .video-placeholder {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .video-placeholder {
+      display: grid;
+      place-items: center;
+      background:
+        linear-gradient(180deg, rgba(18,18,18,0.35), rgba(18,18,18,0.65)),
+        url("https://placehold.co/800x450/171717/8A2BE2?text=Replace+with+YouTube+Embed") center/cover no-repeat;
+      color: #ffffff;
+      text-align: center;
+      padding: 22px;
+    }
+
+    .video-placeholder span {
+      max-width: 280px;
+      background: rgba(0, 0, 0, 0.45);
+      padding: 10px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.08);
+      font-size: 0.9rem;
+    }
+
+    .video-content {
+      padding: 18px;
+    }
+
+    .video-content h3 {
+      margin: 0 0 8px;
+      font-size: 1.05rem;
+      line-height: 1.35;
+    }
+
+    .video-content p {
+      margin: 0 0 12px;
+      color: var(--color-muted);
+      font-size: 0.94rem;
+    }
+
+    .video-tags {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 7px 10px;
+      border-radius: 999px;
+      background: rgba(138, 43, 226, 0.12);
+      border: 1px solid rgba(138, 43, 226, 0.18);
+      color: var(--color-secondary);
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    .shorts-grid .video-frame {
+      aspect-ratio: 9 / 16;
+      max-height: 560px;
+    }
+
+    .card-grid-3,
+    .card-grid-4 {
+      display: grid;
+      gap: 16px;
+    }
+
+    .info-card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+      border: 1px solid var(--color-border);
+      border-radius: 22px;
+      padding: 20px;
+      box-shadow: var(--shadow-card);
+      transition: transform var(--transition), border-color var(--transition);
+    }
+
+    .info-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(177, 156, 217, 0.22);
+    }
+
+    .info-card h3 {
+      margin: 0 0 10px;
+      font-size: 1.05rem;
+    }
+
+    .info-card p {
+      margin: 0;
+      color: var(--color-muted);
+      font-size: 0.96rem;
+    }
+
+    .about-layout,
+    .contact-layout,
+    .cta-layout {
+      display: grid;
+      gap: 18px;
+    }
+
+    .about-copy,
+    .about-side,
+    .contact-panel,
+    .social-panel,
+    .cta-panel,
+    .seo-panel {
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+      border: 1px solid var(--color-border);
+      border-radius: 24px;
+      padding: 22px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .about-copy p,
+    .contact-panel p,
+    .seo-panel p,
+    .cta-panel p {
+      color: var(--color-text-soft);
+    }
+
+    .check-list {
+      display: grid;
+      gap: 12px;
+      padding: 0;
+      margin: 16px 0 0;
+      list-style: none;
+    }
+
+    .check-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: var(--color-text-soft);
+    }
+
+    .check-list li::before {
+      content: "✦";
+      color: var(--color-secondary);
+      font-weight: 700;
+      margin-top: 1px;
+    }
+
+    .stats-grid {
+      display: grid;
+      gap: 14px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .stat-box {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--color-border);
+      border-radius: 18px;
+      padding: 16px;
+    }
+
+    .stat-box strong {
+      display: block;
+      font-size: 1.4rem;
+      margin-bottom: 6px;
+    }
+
+    .stat-box span {
+      color: var(--color-muted);
+      font-size: 0.9rem;
+    }
+
+    .quote-card {
+      position: relative;
+      padding-top: 44px;
+    }
+
+    .quote-card::before {
+      content: "“";
+      position: absolute;
+      left: 20px;
+      top: 10px;
+      font-size: 3rem;
+      color: rgba(177, 156, 217, 0.28);
+      line-height: 1;
+    }
+
+    .faq-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .faq-item {
+      border: 1px solid var(--color-border);
+      border-radius: 18px;
+      overflow: hidden;
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.015));
+    }
+
+    .faq-question {
+      width: 100%;
+      text-align: left;
+      background: transparent;
+      color: #ffffff;
+      border: 0;
+      padding: 18px 20px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      cursor: pointer;
+    }
+
+    .faq-question span:last-child {
+      color: var(--color-secondary);
+      font-size: 1.2rem;
+      transition: transform var(--transition);
+    }
+
+    .faq-item.open .faq-question span:last-child {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 0 20px 18px;
+      color: var(--color-muted);
+    }
+
+    .faq-item.open .faq-answer {
+      display: block;
+    }
+
+    .social-links {
+      display: grid;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .social-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 14px 16px;
+      border-radius: 16px;
+      border: 1px solid var(--color-border);
+      background: rgba(255, 255, 255, 0.03);
+      transition: transform var(--transition), border-color var(--transition), background var(--transition);
+    }
+
+    .social-link:hover {
+      transform: translateY(-2px);
+      border-color: rgba(177, 156, 217, 0.22);
+      background: rgba(138, 43, 226, 0.08);
+    }
+
+    .social-link small {
+      color: var(--color-muted);
+      display: block;
+      margin-top: 2px;
+    }
+
+    .contact-lines {
+      display: grid;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .contact-line {
+      color: var(--color-text-soft);
+      word-break: break-word;
+    }
+
+    .cta-panel {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at top right, rgba(138, 43, 226, 0.28), transparent 30%),
+        linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+    }
+
+    .cta-panel h2,
+    .cta-panel h3 {
+      margin-top: 0;
+    }
+
+    .seo-grid {
+      display: grid;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .seo-chip {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 12px 14px;
+      border-radius: 14px;
+      border: 1px solid var(--color-border);
+      background: rgba(255, 255, 255, 0.03);
+      color: var(--color-text-soft);
+    }
+
+    .seo-chip strong {
+      color: #ffffff;
+      font-size: 0.92rem;
+    }
+
+    .seo-chip span {
+      color: var(--color-secondary);
+      font-size: 0.9rem;
+      text-align: right;
+      word-break: break-word;
+    }
+
+    .seo-steps {
+      margin: 16px 0 0;
+      padding-left: 18px;
+      color: var(--color-text-soft);
+    }
+
+    .seo-steps li + li {
+      margin-top: 10px;
+    }
+
+    .site-footer {
+      padding: 24px 0 40px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      color: var(--color-muted);
+      font-size: 0.92rem;
+    }
+
+    .footer-row {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .muted-note {
+      color: var(--color-muted);
+      font-size: 0.92rem;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    @media (min-width: 700px) {
+      .video-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .card-grid-3 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .card-grid-4 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .contact-layout,
+      .cta-layout {
+        grid-template-columns: 1.1fr 0.9fr;
+      }
+    }
+
+    @media (min-width: 980px) {
+      .mobile-toggle,
+      .mobile-panel {
+        display: none !important;
+      }
+
+      .navigation {
+        display: block;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1.08fr 0.92fr;
+      }
+
+      .video-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .shorts-grid.video-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .card-grid-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .card-grid-4 {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      .about-layout {
+        grid-template-columns: 1.15fr 0.85fr;
+      }
+
+      .footer-row {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" id="top">
+    <div class="container">
+      <div class="nav-wrap">
+        <a href="#hero" class="brand" aria-label="Rog Balai home">
+          <span class="brand-mark" aria-hidden="true">RB</span>
+          <span class="brand-name">
+            <span data-bind="channelName">Rog Balai</span>
+            <small>Creator Channel</small>
+          </span>
+        </a>
+
+        <nav class="navigation" aria-label="Primary navigation">
+          <ul class="navigation-list">
+            <li><a class="nav-link" href="#hero">Home</a></li>
+            <li><a class="nav-link" href="#latest-videos">Videos</a></li>
+            <li><a class="nav-link" href="#shorts">Shorts</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#faq">FAQ</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button class="mobile-toggle" id="mobileToggle" aria-expanded="false" aria-controls="mobilePanel" aria-label="Open menu">
+          <span aria-hidden="true">☰</span>
+        </button>
+      </div>
+
+      <div class="mobile-panel" id="mobilePanel">
+        <ul class="mobile-links" aria-label="Mobile navigation">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#latest-videos">Videos</a></li>
+          <li><a href="#shorts">Shorts</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section hero" id="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <div class="hero-badge">⚡ Premium creator-first landing page</div>
+            <h1 id="hero-title">
+              <span data-bind="channelName">Rog Balai</span>
+              Own the feed.
+              <span>Build the hype.</span>
+            </h1>
+            <p class="hero-subtitle">
+              Welcome to <strong data-bind="channelName">Rog Balai</strong>, a creator-focused home for
+              <span class="keyword" data-bind="niche">gaming and creator entertainment</span> content with a bold, community-driven vibe.
+              If you are looking for fresh uploads, short-form highlights, and a stronger connection to the
+              <span class="keyword" data-bind="primaryKeyword">Rog Balai YouTube channel</span>,
+              this page is built to guide viewers straight to the action.
+            </p>
+            <div class="button-row">
+              <a class="button button-primary" data-bind-href="youtubeUrl" href="https://www.youtube.com/@rogbalai" target="_blank" rel="noopener noreferrer">
+                Subscribe on YouTube
+              </a>
+              <a class="button button-secondary" href="#latest-videos">
+                Watch Latest Videos
+              </a>
+            </div>
+
+            <div class="hero-meta" aria-label="Channel highlight stats">
+              <div class="meta-item">
+                <strong>Fresh uploads</strong>
+                <span>Feature your newest long-form videos here</span>
+              </div>
+              <div class="meta-item">
+                <strong>Short-form punch</strong>
+                <span>Highlight reels, shorts, clips, and viral moments</span>
+              </div>
+              <div class="meta-item">
+                <strong>Community energy</strong>
+                <span>Show off audience love, reach, and creator momentum</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="creator-panel">
+              <div class="creator-panel-top">
+                <div class="live-pill">
+                  <span class="dot-live" aria-hidden="true"></span>
+                  Trending creator presence
+                </div>
+                <div class="live-pill">Mobile-first design</div>
+              </div>
+
+              <div class="creator-screen" aria-hidden="true">
+                <div class="screen-overlay">
+                  <h2>Catchy visuals. Clear calls to action.</h2>
+                  <p>Use this panel to swap in a custom creator image, channel banner, or latest upload promo.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="floating-panel">
+              <div class="floating-stat">
+                <strong>Niche-ready SEO</strong>
+                <span>Placeholders for niche, location, and primary keyword included.</span>
+              </div>
+              <div class="floating-note">
+                <strong>Easy to edit</strong>
+                <span>Replace text, links, and YouTube embeds without touching complex code.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="latest-videos" aria-labelledby="latest-videos-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Latest uploads</span>
+          <h2 id="latest-videos-title">Watch the latest videos from <span class="accent-text" data-bind="channelName">Rog Balai</span></h2>
+          <p class="section-lead">
+            Showcase your strongest recent uploads here. Each card below is beginner-friendly and can be replaced with your real YouTube video embed, title, and description.
+          </p>
+        </div>
+
+        <div class="grid video-grid">
+          <article class="video-card">
+            <div class="video-frame">
+              <iframe
+                loading="lazy"
+                title="Latest video 1 from Rog Balai"
+                src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?rel=0"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="video-content">
+              <h3>Latest Video Title Placeholder One</h3>
+              <p>Replace this with a natural, keyword-friendly description of your newest video and why viewers should watch it now.</p>
+              <div class="video-tags">
+                <span class="tag">Latest upload</span>
+                <span class="tag" data-bind="niche">gaming and creator entertainment</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-frame">
+              <div class="video-placeholder" role="img" aria-label="Placeholder area for YouTube video embed">
+                <span>Replace with your YouTube embed link or thumbnail preview</span>
+              </div>
+            </div>
+            <div class="video-content">
+              <h3>Latest Video Title Placeholder Two</h3>
+              <p>Add a clear and persuasive sentence here. Example: behind-the-scenes content, reactions, gameplay, tutorials, or trending creator commentary.</p>
+              <div class="video-tags">
+                <span class="tag">Easy to replace</span>
+                <span class="tag">SEO friendly</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-frame">
+              <iframe
+                loading="lazy"
+                title="Latest video 3 from Rog Balai"
+                src="https://www.youtube-nocookie.com/embed/ysz5S6PUM-U?rel=0"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="video-content">
+              <h3>Latest Video Title Placeholder Three</h3>
+              <p>Use this space to mention the hook, format, or audience benefit in a natural voice that matches your creator brand.</p>
+              <div class="video-tags">
+                <span class="tag">Featured</span>
+                <span class="tag" data-bind="primaryKeyword">Rog Balai YouTube channel</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="shorts" aria-labelledby="shorts-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Shorts / Reels</span>
+          <h2 id="shorts-title">Fast, vertical, high-impact content for every scroll</h2>
+          <p class="section-lead">
+            Use this section for YouTube Shorts, clips, teaser moments, or repurposed vertical content that keeps your audience engaged between main uploads.
+          </p>
+        </div>
+
+        <div class="grid video-grid shorts-grid">
+          <article class="video-card">
+            <div class="video-frame">
+              <div class="video-placeholder" role="img" aria-label="Placeholder area for YouTube short embed">
+                <span>Shorts embed placeholder</span>
+              </div>
+            </div>
+            <div class="video-content">
+              <h3>Short Clip Placeholder One</h3>
+              <p>Great for reactions, fast edits, highlights, hooks, and viral moments.</p>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-frame">
+              <iframe
+                loading="lazy"
+                title="Shorts placeholder two"
+                src="https://www.youtube-nocookie.com/embed/jNQXAC9IVRw?rel=0"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="video-content">
+              <h3>Short Clip Placeholder Two</h3>
+              <p>Add a short and energetic description that invites viewers to watch the full channel.</p>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <div class="video-frame">
+              <div class="video-placeholder" role="img" aria-label="Placeholder area for short video">
+                <span>Swap in your latest short-form hit</span>
+              </div>
+            </div>
+            <div class="video-content">
+              <h3>Short Clip Placeholder Three</h3>
+              <p>Ideal for showcasing quick personality moments and audience-favorite clips.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">About the channel</span>
+          <h2 id="about-title">What makes <span data-bind="channelName">Rog Balai</span> worth following</h2>
+          <p class="section-lead">
+            Keep this section authentic and keyword-rich without sounding forced. Search engines and human visitors both respond best to clear, useful, natural copy.
+          </p>
+        </div>
+
+        <div class="about-layout">
+          <div class="about-copy">
+            <p>
+              <strong data-bind="channelName">Rog Balai</strong> is built for viewers who enjoy
+              <span class="keyword" data-bind="niche">gaming and creator entertainment</span>
+              content that feels energetic, stylish, and genuinely engaging. Whether the channel focuses on gameplay, reactions, commentary, challenges, tutorials, or creator lifestyle content, this space is where fans can quickly discover what the brand stands for.
+            </p>
+            <p>
+              If you want to improve visibility for audiences searching in
+              <span class="keyword" data-bind="location">Bangladesh</span>
+              or around your chosen topic, keep your channel description and page copy aligned with your real content style. A clear niche, consistent publishing rhythm, and strong viewer experience can help
+              <span class="keyword" data-bind="primaryKeyword">Rog Balai YouTube channel</span>
+              build stronger recognition over time.
+            </p>
+
+            <ul class="check-list">
+              <li>Replace this paragraph with your exact creator story, mission, and channel angle.</li>
+              <li>Use natural terms your audience would actually search for, not stuffed keywords.</li>
+              <li>Keep the tone youthful, confident, and true to your creator identity.</li>
+            </ul>
+          </div>
+
+          <aside class="about-side" aria-label="Channel profile highlights">
+            <h3>Quick profile highlights</h3>
+            <div class="stats-grid">
+              <div class="stat-box">
+                <strong>Bold brand</strong>
+                <span>Premium dark aesthetic with strong gradients and CTAs</span>
+              </div>
+              <div class="stat-box">
+                <strong>SEO ready</strong>
+                <span>Meta tags, semantic structure, and FAQ schema included</span>
+              </div>
+              <div class="stat-box">
+                <strong>Easy edits</strong>
+                <span>Swap content placeholders, links, and embeds in minutes</span>
+              </div>
+              <div class="stat-box">
+                <strong>Fast loading</strong>
+                <span>Plain HTML, CSS, and JavaScript with no heavy framework</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="why-subscribe" aria-labelledby="why-subscribe-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Why subscribe</span>
+          <h2 id="why-subscribe-title">Give viewers a reason to come back, not just click once</h2>
+          <p class="section-lead">
+            Use this section to spell out the recurring value of your channel in a way that feels exciting and credible.
+          </p>
+        </div>
+
+        <div class="card-grid-3">
+          <article class="info-card">
+            <h3>Consistent creator energy</h3>
+            <p>Tell visitors what kind of mood and experience they can expect, whether it is sharp commentary, high-skill gameplay, comedic edits, or authentic personality-driven content.</p>
+          </article>
+          <article class="info-card">
+            <h3>Content worth following</h3>
+            <p>Explain why your uploads are not random. Show that each video, short, or series gives viewers a reason to stay connected and turn notifications on.</p>
+          </article>
+          <article class="info-card">
+            <h3>Community-first experience</h3>
+            <p>Highlight how you talk to your audience, respond to comments, listen to suggestions, or build inside jokes and shared moments with your fans.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="community" aria-labelledby="community-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Audience & community</span>
+          <h2 id="community-title">Turn casual viewers into a loyal community</h2>
+          <p class="section-lead">
+            Add real milestones, engagement stats, fan comments, or creator achievements here. Even simple proof points can increase trust and watch intent.
+          </p>
+        </div>
+
+        <div class="card-grid-4">
+          <article class="info-card">
+            <h3>Engaged audience</h3>
+            <p>Placeholder: “Our viewers come back for strong personality, recognizable style, and content that always has something worth reacting to.”</p>
+          </article>
+          <article class="info-card">
+            <h3>Fan-favorite moments</h3>
+            <p>Placeholder: “Best-performing shorts, challenge clips, reactions, or creator collabs can be featured here to show momentum.”</p>
+          </article>
+          <article class="info-card quote-card">
+            <h3>Community quote</h3>
+            <p>“This channel never misses. The edits, the vibe, and the uploads always feel fresh.” Replace with a real audience comment or testimonial.</p>
+          </article>
+          <article class="info-card">
+            <h3>Growth highlight</h3>
+            <p>Use this space for subscriber milestones, watch-time wins, trending videos, or notable channel achievements.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">FAQ</span>
+          <h2 id="faq-title">Questions viewers may ask before they subscribe</h2>
+          <p class="section-lead">
+            These answers are written to sound helpful and natural. Replace them with your real channel details while keeping the wording clear.
+          </p>
+        </div>
+
+        <div class="faq-list" role="list">
+          <article class="faq-item open">
+            <button class="faq-question" aria-expanded="true">
+              <span>What kind of content does Rog Balai create?</span>
+              <span aria-hidden="true">＋</span>
+            </button>
+            <div class="faq-answer">
+              Rog Balai creates <span data-bind="niche">gaming and creator entertainment</span> content with a bold, community-driven style. Replace this sentence with a more precise description of your actual format, upload style, and audience focus.
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Where can I watch the latest Rog Balai videos?</span>
+              <span aria-hidden="true">＋</span>
+            </button>
+            <div class="faq-answer">
+              You can explore featured uploads in the Latest Videos section above, then head to the full YouTube channel for the complete library, playlists, and newest releases.
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>How do I subscribe and follow Rog Balai?</span>
+              <span aria-hidden="true">＋</span>
+            </button>
+            <div class="faq-answer">
+              Use any Subscribe button on this page to open the official YouTube channel, then hit Subscribe and turn on notifications so you never miss a new upload.
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Can this page be customized for another niche or location?</span>
+              <span aria-hidden="true">＋</span>
+            </button>
+            <div class="faq-answer">
+              Yes. This page includes editable placeholders for niche, location, primary keyword, links, text, embeds, and SEO tags so it can be tuned for your creator brand and search goals.
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Contact & social</span>
+          <h2 id="contact-title">Keep the conversation going beyond YouTube</h2>
+          <p class="section-lead">
+            Link your platforms, creator email, and primary channel page so followers can connect wherever your audience spends time.
+          </p>
+        </div>
+
+        <div class="contact-layout">
+          <div class="contact-panel">
+            <h3>Creator contact</h3>
+            <p>
+              Replace the contact details below with your real creator email, management contact, or business inquiry information. This is especially useful for collaborations, sponsorships, and community outreach.
+            </p>
+
+            <div class="contact-lines">
+              <div class="contact-line"><strong>Email:</strong> hello@example.com</div>
+              <div class="contact-line"><strong>Location focus:</strong> <span data-bind="location">Bangladesh</span></div>
+              <div class="contact-line"><strong>YouTube:</strong> <a data-bind-href="youtubeUrl" href="https://www.youtube.com/@rogbalai" target="_blank" rel="noopener noreferrer">Visit channel</a></div>
+            </div>
+          </div>
+
+          <div class="social-panel">
+            <h3>Social links</h3>
+            <div class="social-links">
+              <a class="social-link" href="https://www.youtube.com/@rogbalai" target="_blank" rel="noopener noreferrer">
+                <span>
+                  <strong>YouTube</strong>
+                  <small>Main channel and subscribe destination</small>
+                </span>
+                <span aria-hidden="true">↗</span>
+              </a>
+
+              <a class="social-link" href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
+                <span>
+                  <strong>Instagram</strong>
+                  <small>Replace with your creator profile link</small>
+                </span>
+                <span aria-hidden="true">↗</span>
+              </a>
+
+              <a class="social-link" href="https://facebook.com/" target="_blank" rel="noopener noreferrer">
+                <span>
+                  <strong>Facebook</strong>
+                  <small>Replace with your page or creator profile</small>
+                </span>
+                <span aria-hidden="true">↗</span>
+              </a>
+
+              <a class="social-link" href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">
+                <span>
+                  <strong>TikTok</strong>
+                  <small>Ideal for repurposed clips and vertical content</small>
+                </span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="final-cta" aria-labelledby="final-cta-title">
+      <div class="container">
+        <div class="cta-layout">
+          <div class="cta-panel">
+            <span class="eyebrow">Final subscribe CTA</span>
+            <h2 id="final-cta-title">If the vibe fits, subscribe to <span data-bind="channelName">Rog Balai</span> today</h2>
+            <p>
+              This final section is designed to convert interest into action. Keep the wording simple, direct, and true to your brand voice. Invite visitors to subscribe, watch more, and become part of the community.
+            </p>
+            <div class="button-row">
+              <a class="button button-primary" data-bind-href="youtubeUrl" href="https://www.youtube.com/@rogbalai" target="_blank" rel="noopener noreferrer">
+                Subscribe Now
+              </a>
+              <a class="button button-secondary" href="#contact">
+                Contact & Social Links
+              </a>
+            </div>
+            <p class="muted-note">
+              Tip: this CTA works best when your channel URL, hero promise, and featured content all align clearly.
+            </p>
+          </div>
+
+          <aside class="seo-panel" id="seo-editing" aria-labelledby="seo-editing-title">
+            <h3 id="seo-editing-title">Where to replace SEO fields</h3>
+            <p>
+              This template includes clear placeholders so you can tune the page later for your niche and audience. The easiest place to edit everything is the configuration block inside the script near the bottom of the page.
+            </p>
+
+            <div class="seo-grid" aria-label="SEO placeholder values">
+              <div class="seo-chip">
+                <strong>Channel name</strong>
+                <span data-bind="channelName">Rog Balai</span>
+              </div>
+              <div class="seo-chip">
+                <strong>Niche</strong>
+                <span data-bind="niche">gaming and creator entertainment</span>
+              </div>
+              <div class="seo-chip">
+                <strong>Location</strong>
+                <span data-bind="location">Bangladesh</span>
+              </div>
+              <div class="seo-chip">
+                <strong>Primary keyword</strong>
+                <span data-bind="primaryKeyword">Rog Balai YouTube channel</span>
+              </div>
+              <div class="seo-chip">
+                <strong>YouTube URL</strong>
+                <span data-bind="youtubeUrl">https://www.youtube.com/@rogbalai</span>
+              </div>
+            </div>
+
+            <ol class="seo-steps">
+              <li>Replace the values in the editable configuration object in the script section.</li>
+              <li>Update the meta title, meta description, canonical URL, Open Graph tags, and Twitter tags in the page head.</li>
+              <li>Swap sample YouTube embeds with your real latest videos and shorts.</li>
+              <li>Rewrite the About, Why Subscribe, and FAQ copy so it matches your actual content style and audience.</li>
+              <li>If you change FAQ questions or answers, also update the JSON-LD FAQ schema in the head for consistency.</li>
+            </ol>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-row">
+        <div>© <span id="currentYear"></span> <span data-bind="channelName">Rog Balai</span>. All rights reserved.</div>
+        <div class="footer-links">
+          <a href="#top">Back to top</a>
+          <a href="#seo-editing">SEO editing guide</a>
+          <a data-bind-href="youtubeUrl" href="https://www.youtube.com/@rogbalai" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /*
+      ============================================================
+      BEGINNER-FRIENDLY EDITABLE CONFIGURATION
+      Replace the values below to customize the whole page quickly.
+      ============================================================
+    */
+    const SITE_CONFIGURATION = {
+      channelName: "Rog Balai",
+      niche: "gaming and creator entertainment",
+      location: "Bangladesh",
+      primaryKeyword: "Rog Balai YouTube channel",
+      youtubeUrl: "https://www.youtube.com/@rogbalai"
+    };
+
+    /*
+      ============================================================
+      OPTIONAL SEO HEAD FIELDS TO UPDATE MANUALLY
+      1. <title>
+      2. meta description
+      3. canonical URL
+      4. Open Graph tags
+      5. Twitter card tags
+      6. JSON-LD FAQ schema
+      ============================================================
+    */
+
+    function applyBindings() {
+      const textBindings = document.querySelectorAll("[data-bind]");
+      textBindings.forEach(function(element) {
+        const key = element.getAttribute("data-bind");
+        if (SITE_CONFIGURATION[key]) {
+          element.textContent = SITE_CONFIGURATION[key];
+        }
+      });
+
+      const hrefBindings = document.querySelectorAll("[data-bind-href]");
+      hrefBindings.forEach(function(element) {
+        const key = element.getAttribute("data-bind-href");
+        if (SITE_CONFIGURATION[key]) {
+          element.setAttribute("href", SITE_CONFIGURATION[key]);
+        }
+      });
+    }
+
+    function setupMobileMenu() {
+      const toggle = document.getElementById("mobileToggle");
+      const panel = document.getElementById("mobilePanel");
+      if (!toggle || !panel) return;
+
+      toggle.addEventListener("click", function() {
+        const isOpen = panel.classList.toggle("open");
+        toggle.setAttribute("aria-expanded", String(isOpen));
+        toggle.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+        toggle.innerHTML = isOpen ? '<span aria-hidden="true">✕</span>' : '<span aria-hidden="true">☰</span>';
+      });
+
+      panel.querySelectorAll("a").forEach(function(link) {
+        link.addEventListener("click", function() {
+          panel.classList.remove("open");
+          toggle.setAttribute("aria-expanded", "false");
+          toggle.setAttribute("aria-label", "Open menu");
+          toggle.innerHTML = '<span aria-hidden="true">☰</span>';
+        });
+      });
+    }
+
+    function setupFaq() {
+      const items = document.querySelectorAll(".faq-item");
+      items.forEach(function(item) {
+        const button = item.querySelector(".faq-question");
+        button.addEventListener("click", function() {
+          const isOpen = item.classList.contains("open");
+          item.classList.toggle("open");
+          button.setAttribute("aria-expanded", String(!isOpen));
+        });
+      });
+    }
+
+    function setupActiveNavigation() {
+      const sections = document.querySelectorAll("main section[id]");
+      const links = document.querySelectorAll(".nav-link");
+
+      function activateLink() {
+        let currentId = "";
+        const offset = 120;
+
+        sections.forEach(function(section) {
+          const top = section.offsetTop - offset;
+          const height = section.offsetHeight;
+          if (window.scrollY >= top && window.scrollY < top + height) {
+            currentId = section.getAttribute("id");
+          }
+        });
+
+        links.forEach(function(link) {
+          const matches = link.getAttribute("href") === "#" + currentId;
+          link.classList.toggle("active", matches);
+        });
+      }
+
+      window.addEventListener("scroll", activateLink, { passive: true });
+      activateLink();
+    }
+
+    function setCurrentYear() {
+      const year = document.getElementById("currentYear");
+      if (year) {
+        year.textContent = new Date().getFullYear();
+      }
+    }
+
+    applyBindings();
+    setupMobileMenu();
+    setupFaq();
+    setupActiveNavigation();
+    setCurrentYear();
+  </script>
+</body>
+</html>
